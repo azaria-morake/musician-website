@@ -12,7 +12,6 @@ import {
   Bg,
   BurgerButton,
   MobileMenu,
-  NavLogo,
   MobileNavItem,
   NavImage,
 } from './HomepageStyles';

@@ -27,7 +27,7 @@ const AboutUs = () => {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [translateX, setTranslateX] = useState(0);
-  const carouselRef = useRef(null);
+
 
   const youtubeApiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
   const CHANNEL_NAME = 'StinoLeThwenny';
