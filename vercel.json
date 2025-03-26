@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+      "src": "musicians-app/package.json",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "dest": "/musicians-app/$1"
+    }
   ]
 }
-
