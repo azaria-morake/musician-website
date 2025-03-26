@@ -2,7 +2,10 @@
   "builds": [
     {
       "src": "musicians-app/package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "musicians-app/dist"
+      }
     }
   ],
   "routes": [
